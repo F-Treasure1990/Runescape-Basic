@@ -2,3 +2,12 @@
   border: 2px solid var(--border-color);
   background-color: var(--black-color);
 }
+
+@mixin mainContentScrolls($url) {
+  background: url('../img/#{$url}') no-repeat center;
+  content: '';
+  height: 50px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}

@@ -1,0 +1,30 @@
+.mainContent_paragraph {
+  font-size: var(--font-13);
+  color: var(--black-color);
+  line-height: 150%;
+}
+
+.newsArticle_paragraph {
+  font-size: 1.3rem;
+  line-height: 150%;
+
+  & > a {
+    color: var(--accentTitle-color);
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.newsArticle_bottomParagraph {
+  text-align: center;
+  line-height: 150%;
+  font-size: 1.3rem;
+
+  & > a {
+    color: var(--accentTitle-color);
+    font-weight: bold;
+  }
+}

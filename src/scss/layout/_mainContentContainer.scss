@@ -1,0 +1,19 @@
+@use '../utilities/index' as *;
+
+.mainContentContainer {
+  background: url('../img/main-bg.gif') repeat-y center top;
+  padding: 50px 106px;
+  position: relative;
+  margin: 0 auto;
+
+  &::before {
+    @include mainContentScrolls('backdrop_765_top.gif');
+    top: -11px;
+  }
+
+  &::after {
+    @include mainContentScrolls('backdrop_765_bottom.gif');
+
+    bottom: -11px;
+  }
+}

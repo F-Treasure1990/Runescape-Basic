@@ -1,11 +1,10 @@
 .nav {
   &_container {
-    margin-bottom: 30px;
-    // overflow: hidden;
+    overflow: hidden;
     padding-top: 4px;
     position: relative;
     width: 810px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
   }
 
   &_leftSideContainer {
