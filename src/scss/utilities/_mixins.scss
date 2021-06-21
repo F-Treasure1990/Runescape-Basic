@@ -2,3 +2,13 @@
   border: 2px solid var(--border-color);
   background-color: var(--black-color);
 }
+
+@mixin listLink_icon($url) {
+  background: url($url) no-repeat center;
+  content: '';
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}

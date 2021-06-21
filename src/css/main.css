@@ -3,6 +3,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove default margin */
@@ -21,6 +23,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ul,
 ul[role=list],
 ol[role=list] {
   list-style: none;
@@ -85,10 +89,10 @@ select {
 }
 :root {
   --primary-color: #90c040;
-  --white: #fff;
+  --white-color: #fff;
   --black-color: #000;
   --border-color: #382418;
-  --webpage-width: 915px;
+  --webpage-width: 900px;
 }
 
 .siteContainer {
@@ -97,6 +101,27 @@ select {
   margin: 0 auto;
   height: 100vh;
   overflow: hidden;
+}
+
+.nav_container {
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding-top: 4px;
+  position: relative;
+  width: 810px;
+  margin: 0 auto;
+}
+.nav_leftSideContainer {
+  float: left;
+  margin-left: 30px;
+  width: 260px;
+}
+.nav_rightSideContainer {
+  float: right;
+  width: 490px;
+  padding-top: 23px;
+  height: 200px;
+  background-color: limegreen;
 }
 
 .loginBar {
@@ -113,6 +138,100 @@ select {
   color: var(--primary-color);
   float: right;
   margin-right: 3px;
+}
+
+.banner {
+  background: url("../img/rslogo3-Banner.png") no-repeat center;
+  margin-bottom: 25px;
+  min-height: 135px;
+}
+
+.playerCount {
+  width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--white-color);
+  font-size: 1.3rem;
+}
+
+.navBox {
+  background: var(--black-color);
+  border: 2px solid var(--border-color);
+  background-color: var(--black-color);
+  padding: 6px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.navBox > h3 {
+  color: var(--white-color);
+  font-size: 1.3rem;
+  font-weight: normal;
+  position: absolute;
+  left: 0px;
+  top: -11px;
+  text-align: center;
+  width: 100%;
+}
+
+.list_link {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin: 1px 0px;
+  padding: 2px 0 2px 30px;
+  position: relative;
+}
+.list_link:hover {
+  text-decoration: underline;
+}
+
+.arrow::before {
+  background: url("../img/arrow.gif") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.world::before {
+  background: url("../img/world.gif") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.star::before {
+  background: url("../img/star.gif") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.news::before {
+  background: url("../img/manual.gif") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.mobile::before {
+  background: url("../img/mobile.png") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */
