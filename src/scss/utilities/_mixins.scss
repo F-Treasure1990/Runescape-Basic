@@ -1,0 +1,4 @@
+@mixin brownBorder {
+  border: 2px solid var(--border-color);
+  background-color: var(--black-color);
+}

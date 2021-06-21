@@ -1,0 +1,17 @@
+@use '../utilities/mixins' as *;
+
+.loginBar {
+  @include brownBorder;
+  color: var(--white);
+  font-size: 1.3rem;
+  margin: 10px auto;
+  width: 750px;
+  overflow: hidden;
+
+  & > a {
+    padding: 3px;
+    color: var(--primary-color);
+    float: right;
+    margin-right: 3px;
+  }
+}
