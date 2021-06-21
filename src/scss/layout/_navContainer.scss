@@ -1,7 +1,7 @@
 .nav {
   &_container {
     margin-bottom: 30px;
-    overflow: hidden;
+    // overflow: hidden;
     padding-top: 4px;
     position: relative;
     width: 810px;
@@ -18,7 +18,5 @@
     float: right;
     width: 490px;
     padding-top: 23px;
-    height: 200px;
-    background-color: limegreen;
   }
 }

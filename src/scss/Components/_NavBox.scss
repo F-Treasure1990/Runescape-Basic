@@ -13,36 +13,58 @@
     font-weight: normal;
     position: absolute;
     left: 0px;
-    top: -11px;
+    top: -9px;
     text-align: center;
     width: 100%;
+  }
+  &_list > li {
+    margin: 3px 0px;
   }
 }
 
 .list_link {
   color: var(--primary-color);
   font-size: 1.3rem;
-  margin: 1px 0px;
   padding: 2px 0 2px 30px;
   position: relative;
+  // line-height: 1.4;
 
   &:hover {
     text-decoration: underline;
   }
 }
+//------- NAV ICONS ---------
 
-.arrow::before {
-  @include listLink_icon('../img/arrow.gif');
-}
-.world::before {
-  @include listLink_icon('../img/world.gif');
-}
-.star::before {
-  @include listLink_icon('../img/star.gif');
-}
-.news::before {
-  @include listLink_icon('../img/manual.gif');
-}
-.mobile::before {
-  @include listLink_icon('../img/mobile.png');
+$icon-list: (
+  //game nav box
+  arrow: 'arrow.gif',
+  world: 'world.gif',
+  star: 'star.gif',
+  news: 'news.gif',
+  mobile: 'mobile.png',
+  //community nav box
+  polls: 'polls.gif',
+  highscores: 'highscore.gif',
+  exchange: 'exchange.gif',
+  forums: 'forums.gif',
+  shop: 'shop.gif',
+  wiki: 'wiki.png',
+  // Account nav box
+  member: 'member.gif',
+  bonds: 'bonds.gif',
+  settings: 'settings.png',
+  auth: 'auth.png',
+  support: 'support.png'
+);
+
+@each $name, $url in $icon-list {
+  .#{$name}:before {
+    background: url('../img/nav-imgs/#{$url}') no-repeat center;
+    content: '';
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 30px;
+    position: absolute;
+  }
 }

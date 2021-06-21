@@ -1,0 +1,42 @@
+.navButton {
+  background: url('../img/nav-imgs/btn-texture.gif') no-repeat center;
+  height: 126px;
+  padding: 11px;
+  margin-right: 8px;
+  text-align: center;
+  width: 151px;
+  display: inline-block;
+  vertical-align: top;
+
+  & > span {
+    font-weight: bold;
+    color: var(--white-color);
+    display: block;
+    font-size: 1.7rem;
+  }
+}
+
+.newUser {
+  & span:first-child {
+    margin-top: 25px;
+  }
+}
+
+.freePlayer {
+  & :first-child {
+    margin-top: 20px;
+  }
+  & :nth-child(3) {
+    font-size: 1.2rem;
+  }
+}
+
+//manual world select
+.worldSelect {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+  width: 100%;
+}

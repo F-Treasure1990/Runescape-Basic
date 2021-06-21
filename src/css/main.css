@@ -43,7 +43,6 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -105,7 +104,6 @@ select {
 
 .nav_container {
   margin-bottom: 30px;
-  overflow: hidden;
   padding-top: 4px;
   position: relative;
   width: 810px;
@@ -120,8 +118,6 @@ select {
   float: right;
   width: 490px;
   padding-top: 23px;
-  height: 200px;
-  background-color: limegreen;
 }
 
 .loginBar {
@@ -168,15 +164,17 @@ select {
   font-weight: normal;
   position: absolute;
   left: 0px;
-  top: -11px;
+  top: -9px;
   text-align: center;
   width: 100%;
+}
+.navBox_list > li {
+  margin: 3px 0px;
 }
 
 .list_link {
   color: var(--primary-color);
   font-size: 1.3rem;
-  margin: 1px 0px;
   padding: 2px 0 2px 30px;
   position: relative;
 }
@@ -184,8 +182,8 @@ select {
   text-decoration: underline;
 }
 
-.arrow::before {
-  background: url("../img/arrow.gif") no-repeat center;
+.arrow:before {
+  background: url("../img/nav-imgs/arrow.gif") no-repeat center;
   content: "";
   height: 100%;
   left: 0;
@@ -194,8 +192,8 @@ select {
   position: absolute;
 }
 
-.world::before {
-  background: url("../img/world.gif") no-repeat center;
+.world:before {
+  background: url("../img/nav-imgs/world.gif") no-repeat center;
   content: "";
   height: 100%;
   left: 0;
@@ -204,8 +202,8 @@ select {
   position: absolute;
 }
 
-.star::before {
-  background: url("../img/star.gif") no-repeat center;
+.star:before {
+  background: url("../img/nav-imgs/star.gif") no-repeat center;
   content: "";
   height: 100%;
   left: 0;
@@ -214,8 +212,8 @@ select {
   position: absolute;
 }
 
-.news::before {
-  background: url("../img/manual.gif") no-repeat center;
+.news:before {
+  background: url("../img/nav-imgs/news.gif") no-repeat center;
   content: "";
   height: 100%;
   left: 0;
@@ -224,14 +222,161 @@ select {
   position: absolute;
 }
 
-.mobile::before {
-  background: url("../img/mobile.png") no-repeat center;
+.mobile:before {
+  background: url("../img/nav-imgs/mobile.png") no-repeat center;
   content: "";
   height: 100%;
   left: 0;
   top: 0;
   width: 30px;
   position: absolute;
+}
+
+.polls:before {
+  background: url("../img/nav-imgs/polls.gif") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.highscores:before {
+  background: url("../img/nav-imgs/highscore.gif") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.exchange:before {
+  background: url("../img/nav-imgs/exchange.gif") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.forums:before {
+  background: url("../img/nav-imgs/forums.gif") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.shop:before {
+  background: url("../img/nav-imgs/shop.gif") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.wiki:before {
+  background: url("../img/nav-imgs/wiki.png") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.member:before {
+  background: url("../img/nav-imgs/member.gif") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.bonds:before {
+  background: url("../img/nav-imgs/bonds.gif") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.settings:before {
+  background: url("../img/nav-imgs/settings.png") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.auth:before {
+  background: url("../img/nav-imgs/auth.png") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.support:before {
+  background: url("../img/nav-imgs/support.png") no-repeat center;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 30px;
+  position: absolute;
+}
+
+.navButton {
+  background: url("../img/nav-imgs/btn-texture.gif") no-repeat center;
+  height: 126px;
+  padding: 11px;
+  margin-right: 8px;
+  text-align: center;
+  width: 151px;
+  display: inline-block;
+  vertical-align: top;
+}
+.navButton > span {
+  font-weight: bold;
+  color: var(--white-color);
+  display: block;
+  font-size: 1.7rem;
+}
+
+.newUser span:first-child {
+  margin-top: 25px;
+}
+
+.freePlayer :first-child {
+  margin-top: 20px;
+}
+.freePlayer :nth-child(3) {
+  font-size: 1.2rem;
+}
+
+.worldSelect {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
