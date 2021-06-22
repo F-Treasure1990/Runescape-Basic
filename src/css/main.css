@@ -146,6 +146,34 @@ select {
   bottom: -11px;
 }
 
+.footer {
+  display: block;
+  margin: 20px auto 0px auto;
+  position: relative;
+  text-align: center;
+  width: 815px;
+}
+.footer_logo {
+  left: 15px;
+  position: absolute;
+  top: 11px;
+}
+.footer_logo > img {
+  width: 80px;
+}
+.footer_signal {
+  background: url("../img/signal-img.png") no-repeat center;
+  height: 21px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  width: 21px;
+}
+
+.marginBottom {
+  height: 20px;
+}
+
 .loginBar {
   border: 2px solid var(--border-color);
   background-color: var(--black-color);
@@ -459,6 +487,16 @@ select {
 .newsArticle_bottomParagraph > a {
   color: var(--accentTitle-color);
   font-weight: bold;
+}
+
+.footer_paragraph {
+  color: var(--white-color);
+}
+.footer_paragraph > a {
+  color: var(--primary-color);
+}
+.footer_paragraph > a:hover {
+  text-decoration: underline;
 }
 
 .newsArticle {

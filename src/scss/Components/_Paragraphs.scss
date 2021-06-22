@@ -28,3 +28,15 @@
     font-weight: bold;
   }
 }
+
+.footer_paragraph {
+  color: var(--white-color);
+
+  & > a {
+    color: var(--primary-color);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
